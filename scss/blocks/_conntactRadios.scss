@@ -1,0 +1,36 @@
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox .checkbox {
+    margin-right: 10px;
+}
+
+.custom-checkbox input {
+    -webkit-appearance: none;
+    position: absolute
+}
+
+.checkbox { 
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $colorTextInput;
+    border-radius: 50%;
+
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkbox .checkmark {
+    display: block;
+}

@@ -1,0 +1,27 @@
+.footer {
+  padding: 80px 0 27px;
+}
+
+.footer__title {
+    margin-bottom: 60px;
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    column-gap: 31px;
+}
+
+.footer__copyright {
+  color: $colorTextInput;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer__policy {
+  color: $colorWhite;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

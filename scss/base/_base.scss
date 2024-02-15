@@ -17,6 +17,7 @@ a {
   max-width: 1350px;
   padding: 0 15px;
   margin: 0 auto;
+
 }
 
 .none {
@@ -24,7 +25,8 @@ a {
 }
 
 .default__title {
-  &_case {
+  &_case,
+  &_blog {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,6 +89,13 @@ a {
   }
 }
 
+.title4 {
+  color: $colorWhite;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
 .subtitle {
   font-weight: 400;
   color: $colorWhite;
@@ -97,9 +106,7 @@ a {
   }
 
   &_services {
-    color: $colorWhite;
     font-size: 26px;
-    font-weight: 400;
     line-height: 200%;
   }
 
@@ -111,6 +118,11 @@ a {
   &_case {
     font-size: 26px;
     line-height: 33px;
+  }
+
+  &_blog {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
@@ -135,6 +147,10 @@ a {
   &_case {
     column-gap: 4px;
     padding: 12px 24px;
+  }
+
+  &_connect {
+    width: 100%;
   }
 
   &:hover {

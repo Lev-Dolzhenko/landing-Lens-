@@ -1,0 +1,47 @@
+.checkbox__wrapper_send {
+  margin-top: 40px;
+  span {
+    color: $colorWhite;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+
+.checkbox_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-checkbox_send {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox_send input {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.checkbox_send {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $colorTextInput;
+  border-radius: 2px;
+}
+
+.checkmark_send {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  display: none;
+}
+
+.custom-checkbox_send input:checked ~ .checkbox_send .checkmark_send {
+  display: block;
+}

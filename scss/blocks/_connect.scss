@@ -1,0 +1,83 @@
+.connect {
+  position: relative;
+  padding-bottom: 82px;
+}
+
+.connect__row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.connect__form {
+  max-width: 553px;
+  width: 100%;
+
+  span {
+    color: $colorWhite;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.connect__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  margin-bottom: 40px;
+}
+
+.connect__input {
+  border-radius: 60px;
+  background: $colorBgInput;
+
+  padding: 18px 24px;
+
+  color: $colorTextInput;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.radios__wrapper {
+    margin-left: 24px;
+}
+
+.connect__radios {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  margin-top: 20px;
+
+  label {
+    color: $colorWhite;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+.connect__checkboxe {
+    margin-right: 12px;
+}
+
+.connect__button {
+  margin-top: 30px;
+}
+
+.connect__telegram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+
+  margin-top: 22px;
+}
+
+.svg__connect {
+  position: absolute;
+  bottom: 0;
+}
