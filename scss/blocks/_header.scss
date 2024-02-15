@@ -1,0 +1,53 @@
+.header__wrapper {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  margin-bottom: 150px;
+}
+
+.header {
+}
+.container {
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 0;
+}
+.header__img {
+}
+.header__nav {
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  column-gap: 81px;
+}
+.header__item {
+}
+.header__link {
+  color: $colorWhite !important ;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.header__button {
+}
+
+#mirrorBg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#vectorBg {
+  // position: absolute;
+  // left: calc(99 * 100% / 1440);
+  // top: 20px;
+}

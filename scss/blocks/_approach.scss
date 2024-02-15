@@ -1,0 +1,12 @@
+.approach {
+    padding-bottom: 200px;
+}
+
+.approach__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 60px;
+
+    margin: 80px 0;
+}

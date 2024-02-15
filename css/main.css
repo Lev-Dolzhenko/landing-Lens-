@@ -1,0 +1,555 @@
+/* BASE */
+@import '/fonts/euclid/stylesheet.css';
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/*FONTS*/
+/*FONTS*/
+/*COLORS*/
+/*COLORS*/
+/*MEDIA*/
+/*MEDIA*/
+body {
+  font-family: "Euclid Circular B", serif;
+  font-size: 16px;
+  background-color: #1E1E1E;
+}
+
+a {
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.container {
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+.default__title_case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+.default__title_case a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.default__title_case img {
+  padding-top: 2px;
+}
+
+.button__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title1 {
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.title2 {
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+}
+
+.title3 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+}
+.title3_approach span {
+  padding-right: 15px;
+}
+.title3_case {
+  font-weight: 500;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: #ffffff;
+}
+.subtitle_info {
+  font-size: 32px;
+  line-height: 150%;
+}
+.subtitle_services {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 200%;
+}
+.subtitle_approach {
+  font-size: 20px;
+  line-height: 150%;
+}
+.subtitle_case {
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  background-color: #ffffff;
+  padding: 12px 43.5px;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.button_case {
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  padding: 12px 24px;
+}
+.button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.nav-icon-btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 1px;
+  --line-margin: 2;
+  --color: #000;
+  height: var(--height);
+  width: var(--width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  -webkit-transition: top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+  transition: top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+}
+
+.nav-icon::before {
+  top: calc(var(--line-height) * -8);
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) * 8);
+}
+
+.nav-icon.nav-icon--active {
+  background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  -webkit-transition: top var(--time) linear, -webkit-transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, -webkit-transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time), -webkit-transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* BASE */
+/* BLOCK */
+.header__wrapper {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  margin-bottom: 150px;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 81px;
+     -moz-column-gap: 81px;
+          column-gap: 81px;
+}
+
+.header__link {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#mirrorBg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.hero {
+  padding-bottom: 184px;
+}
+
+.hero__title {
+  max-width: 830px;
+  margin-bottom: 59px;
+}
+
+.hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  row-gap: 20px;
+}
+
+.hero__item {
+  display: inline;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  padding: 8px 18px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.hero__item img {
+  margin-right: 10px;
+}
+
+.info {
+  margin-top: 93px;
+}
+
+.info__subtitle {
+  max-width: 866px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.services {
+  padding: 200px 0;
+}
+
+.button__services {
+  margin: 0 auto;
+}
+
+.services__elem {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 0;
+}
+
+.services__elem_item {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 200%;
+  list-style-type: disc;
+}
+
+.svg_services {
+  position: absolute;
+  bottom: 0;
+}
+
+.approach {
+  padding-bottom: 200px;
+}
+
+.approach__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 60px;
+  margin: 80px 0;
+}
+
+.approach__elem_title {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.approach__elem_subtitle {
+  padding-top: 30px;
+}
+
+.svg_approach {
+  position: absolute;
+  bottom: 0;
+}
+
+.case {
+  padding-bottom: 200px;
+}
+
+.case__elem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0;
+}
+
+.case__type_title {
+  margin-bottom: 10px;
+}
+
+.case__type_span {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.case__type_tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+}
+
+.case__type_tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.case__elem_subtitle {
+  max-width: 463px;
+}
+
+.svg_case {
+  position: absolute;
+}
+
+.svg_case-top {
+  top: 0;
+}
+
+.svg_case-bottom {
+  bottom: 0;
+}
+
+/* BLOCK */

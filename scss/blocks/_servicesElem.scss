@@ -1,0 +1,22 @@
+.services__elem {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 80px 0;
+}
+
+.services__elem_item {
+  color: $colorWhite;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 200%;
+
+  list-style-type: disc;
+}
+
+.svg_services {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,59 @@
+.case__elem {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 0;
+}
+
+.case__type_title {
+  margin-bottom: 10px;
+}
+
+.case__type_span {
+  margin-bottom: 40px;
+
+  color: $colorWhite;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.case__type_tags {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.case__type_tag {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  border: 1px solid $colorWhite;
+  border-radius: 20px;
+
+  padding: 8px 12px;
+
+  color: $colorWhite;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.case__elem_subtitle {
+  max-width: 463px;
+}
+.case__elem_button {
+}
+
+.svg_case {
+  position: absolute;
+}
+
+.svg_case-top {
+    top: 0;
+}
+
+.svg_case-bottom {
+    bottom: 0;
+}
