@@ -1,12 +1,24 @@
 .approach {
-    padding-bottom: 200px;
+    padding-bottom: clamp(130px, 6.534rem + 7.95vw, 200px);
 }
 
 .approach__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    row-gap: 60px;
+    row-gap: clamp(35px, 1.619rem + 2.84vw, 60px);
 
-    margin: 80px 0;
+    margin: clamp(40px, 1.591rem + 4.55vw, 80px) 0;
+}
+
+@include mediaTablet {
+  .approach__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include semiTablet {
+    .approach__grid {
+        grid-template-columns: 1fr;
+    }
 }

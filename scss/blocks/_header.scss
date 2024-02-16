@@ -6,7 +6,7 @@
 }
 
 .navigation {
-  margin-bottom: 150px;
+  margin-bottom: clamp(50px, 0.852rem + 11.36vw, 150px);
 }
 
 .header {
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 40px 0;
+  padding: clamp(30px, 1.648rem + 1.14vw, 40px) 0;
 }
 .header__img {
 }
@@ -37,17 +37,17 @@
   font-weight: 400;
   line-height: 24px;
 }
-.header__button {
+
+.burder__button {
+  display: none;
 }
 
-#mirrorBg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+@include mediaTablet {
+  .header__nav, .header__button {
+    display: none;
+  }
 
-#vectorBg {
-  // position: absolute;
-  // left: calc(99 * 100% / 1440);
-  // top: 20px;
+  .burder__button {
+    display: block;
+  }
 }

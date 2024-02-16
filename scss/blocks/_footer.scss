@@ -1,9 +1,9 @@
 .footer {
-  padding: 80px 0 27px;
+  padding: clamp(40px, 1.591rem + 4.55vw, 80px) 0 clamp(20px, 1.091rem + 0.8vw, 27px);
 }
 
 .footer__title {
-    margin-bottom: 60px;
+    margin-bottom: clamp(20px, 0.341rem + 4.55vw, 60px);
 }
 
 .footer__info {
@@ -14,14 +14,21 @@
 
 .footer__copyright {
   color: $colorTextInput;
-  font-size: 16px;
+  font-size: clamp(12px, 0.659rem + 0.45vw, 16px);
   font-weight: 400;
   line-height: 24px;
 }
 
 .footer__policy {
   color: $colorWhite;
-  font-size: 16px;
+  font-size: clamp(12px, 0.659rem + 0.45vw, 16px);
   font-weight: 400;
   line-height: 24px;
+}
+
+@include mediaPhone {
+  .footer__info {
+    column-gap: unset;
+    justify-content: space-between;
+  }
 }

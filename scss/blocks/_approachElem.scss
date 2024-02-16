@@ -2,10 +2,10 @@
 }
 .approach__elem_title {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: clamp(22px, 1.193rem + 0.91vw, 30px);
 }
 .approach__elem_subtitle {
-  padding-top: 30px;
+  padding-top: clamp(22px, 1.193rem + 0.91vw, 30px);
 }
 
 .svg_approach {

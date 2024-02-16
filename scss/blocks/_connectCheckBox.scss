@@ -45,3 +45,9 @@
 .custom-checkbox_send input:checked ~ .checkbox_send .checkmark_send {
   display: block;
 }
+
+@include semiTablet {
+  .custom-checkbox_send {
+    display: none;
+  }
+}

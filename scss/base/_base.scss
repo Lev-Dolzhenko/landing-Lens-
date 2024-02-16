@@ -17,11 +17,25 @@ a {
   max-width: 1350px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
 .none {
   display: none !important;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  z-index: 8;
+
+  opacity: 0;
+  visibility: hidden;
+
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .default__title {
@@ -31,7 +45,7 @@ a {
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 80px;
+    margin-bottom: clamp(40px, 1.591rem + 4.55vw, 80px);
 
     a {
       display: flex;
@@ -59,22 +73,26 @@ a {
 .title1 {
   color: $colorWhite;
   font-family: $ubuntu;
-  font-size: 70px;
+  font-size: clamp(32px, 1.136rem + 4.32vw, 70px);
   font-weight: 700;
-  line-height: 80px;
+  line-height: clamp(40px, 1.591rem + 4.55vw, 80px);
 }
 
 .title2 {
   color: $colorWhite;
   font-family: $ubuntu;
-  font-size: 64px;
+  font-size: clamp(36px, 1.614rem + 3.18vw, 64px);
   font-weight: 700;
-  line-height: 74px;
+  line-height: clamp(40px, 1.727rem + 3.86vw, 74px);
+
+  &_footer {
+    font-size: clamp(29px, 1.017rem + 3.98vw, 64px);
+  }
 }
 
 .title3 {
   color: $colorWhite;
-  font-size: 36px;
+  font-size: clamp(22px, 1.057rem + 1.59vw, 36px);
   font-weight: 400;
   line-height: 46px;
 
@@ -85,13 +103,14 @@ a {
   }
 
   &_case {
+    line-height: clamp(28px, 1.341rem + 2.05vw, 46px);
     font-weight: 500;
   }
 }
 
 .title4 {
   color: $colorWhite;
-  font-size: 24px;
+  font-size: clamp(18px, 0.989rem + 0.68vw, 24px);
   font-weight: 700;
   line-height: 120%;
 }
@@ -101,27 +120,27 @@ a {
   color: $colorWhite;
 
   &_info {
-    font-size: 32px;
+    font-size: clamp(18px, 0.807rem + 1.59vw, 32px);
     line-height: 150%;
   }
 
   &_services {
-    font-size: 26px;
+    font-size: clamp(16px, 0.773rem + 1.14vw, 26px);
     line-height: 200%;
   }
 
   &_approach {
-    font-size: 20px;
+    font-size: clamp(14px, 0.739rem + 0.68vw, 20px);
     line-height: 150%;
   }
 
   &_case {
-    font-size: 26px;
-    line-height: 33px;
+    font-size: clamp(16px, 0.773rem + 1.14vw, 26px);
+    line-height: clamp(20px, 0.955rem + 1.48vw, 33px);
   }
 
   &_blog {
-    font-size: 18px;
+    font-size: clamp(14px, 0.784rem + 0.45vw, 18px);
     line-height: 28px;
   }
 }
@@ -151,6 +170,9 @@ a {
 
   &_connect {
     width: 100%;
+    // background-color: red;
+    // pointer-events: none;
+    // cursor: not-allowed;
   }
 
   &:hover {

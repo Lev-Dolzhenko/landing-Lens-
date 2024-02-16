@@ -18,7 +18,7 @@
   <body>
     <header class="header none1">
       <div class="header__wrapper">
-        <section class="navigation">
+        <section class="navigation none1">
           <div class="container">
             <div class="header__row">
               <a href="!#">
@@ -45,6 +45,28 @@
                 </ul>
               </nav>
               <button class="header__button button">Начать</button>
+              <div id="burgerIcon" class="burder__button">
+                <input
+                  type="checkbox"
+                  id="burger-checkbox"
+                  class="burger-checkbox"
+                />
+                <label
+                  id="burgerButton"
+                  class="burger"
+                  for="burger-checkbox"
+                ></label>
+              </div>
+              <nav class="header__nav_mobile">
+                <ul>
+                  <li><a href="#!">О нас</a></li>
+                  <li><a href="#!">Услуги</a></li>
+                  <li><a href="#!">Кейсы</a></li>
+                  <li><a href="#!">Блог</a></li>
+                </ul>
+                <button class="button button__header_mobile">Начать</button>
+              </nav>
+              <div class="overlay"></div>
             </div>
           </div>
         </section>
@@ -74,7 +96,6 @@
             </ul>
           </div>
         </section>
-        <!-- <img id="mirrorBg" src="/content/header/mirrorBg.png" alt="mirrorBg" /> -->
       </div>
     </header>
     <main class="main">
@@ -93,7 +114,7 @@
       <section class="services none1">
         <div class="container">
           <div class="default__title">
-            <h2 class="title2 title2_default">Услуги &#41;</h2>
+            <h2 class="title2 title2_default">Услуги&#41;</h2>
           </div>
           <div class="services__row">
             <div class="services__elem">
@@ -196,7 +217,7 @@
       <section class="approach none1">
         <div class="container">
           <div class="default__title">
-            <h2 class="title2 title2_default">Наш подход &#41;</h2>
+            <h2 class="title2 title2_default">Наш подход&#41;</h2>
           </div>
           <div class="approach__grid">
             <div class="approach__elem">
@@ -421,7 +442,7 @@
       <section class="case none1">
         <div class="container">
           <div class="default__title default__title_case">
-            <h2 class="title2 title2_default">Кейсы &#41;</h2>
+            <h2 class="title2 title2_default">Кейсы&#41;</h2>
             <a href="#!"
               >Все проекты
               <img src="/content/main/case/arrowWhite.svg" alt="arrowWhite"
@@ -613,7 +634,7 @@
       <section class="blog none1">
         <div class="container">
           <div class="default__title default__title_blog">
-            <h2 class="title2 title2_default">Блог &#41;</h2>
+            <h2 class="title2 title2_default">Блог&#41;</h2>
             <a href="#!"
               >Больше материала
               <img src="/content/main/case/arrowWhite.svg" alt="arrowWhite"
@@ -759,7 +780,7 @@
         <div class="container">
           <div class="connect__row">
             <div class="default__title">
-              <h2 class="title2 title2_default">Связаться с нами &#41;</h2>
+              <h2 class="title2 title2_default">Связаться с нами&#41;</h2>
             </div>
             <form class="connect__form">
               <div class="connect__inputs">
@@ -851,7 +872,7 @@
                 </label>
               </div>
               <div class="connect__button">
-                <button class="button button_connect">Отправить</button>
+                <button id="openPopup" class="button button_connect">Отправить</button>
               </div>
               <div class="connect__telegram">
                 <a href="!#">
@@ -887,9 +908,14 @@
             />
           </svg>
         </div>
+        <div id="connectPopup" class="connect__popup">
+          <h3>Вы в фокусе!</h3>
+          <span>Скоро свяжемся&#41;</span>
+          <button id="closePopup">Закрыть</button>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer none1">
       <div class="container">
         <div class="footer__title">
           <h2 class="title2 title2_footer">info@lens-agency.ru</h2>

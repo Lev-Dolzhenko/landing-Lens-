@@ -1,27 +1,28 @@
 .hero {
-  padding-bottom: 184px;
+  padding-bottom: clamp(0px, -4.182rem + 20.91vw, 184px);
 }
 .hero__title {
   max-width: 830px;
 
-  margin-bottom: 59px;
+  margin-bottom: clamp(30px, 1.193rem + 3.41vw, 60px);
 }
 .hero__list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  row-gap: 20px;
+  row-gap: clamp(12px, 0.568rem + 0.91vw, 20px);
 }
 .hero__item {
-  display: inline;
+  display: inline-flex;
+  align-items: center;
 
   border: 1px solid $colorWhite;
   border-radius: 40px;
 
-  padding: 8px 18px;
+  padding: clamp(6px, 0.33rem + 0.23vw, 8px) clamp(16px, 0.955rem + 0.23vw, 18px);
 
   color: $colorWhite;
-  font-size: 16px;
+  font-size: clamp(12px, 0.659rem + 0.45vw, 16px);
   font-weight: 400;
   line-height: 150%;
 

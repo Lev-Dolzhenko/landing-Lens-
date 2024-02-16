@@ -4,12 +4,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    padding: 80px 0;
+    padding: clamp(40px, 1.591rem + 4.55vw, 80px) 0;
 }
 
 .services__elem_item {
   color: $colorWhite;
-  font-size: 26px;
+  font-size: clamp(16px, 0.773rem + 1.14vw, 26px);
   font-weight: 400;
   line-height: 200%;
 
@@ -19,4 +19,18 @@
 .svg_services {
     position: absolute;
     bottom: 0;
+}
+
+@include mediaTablet {
+  .services__elem {
+    grid-template-columns: 1fr;
+  }
+
+  .services__elem_list {
+    margin-left: 30px;
+  }
+
+  .services__elem_subtitle {
+    margin-bottom: 24px;
+  }
 }
