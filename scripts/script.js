@@ -11,9 +11,9 @@ const checkboxStatus = document.getElementById("checkbox_status");
 
 openPopup.addEventListener("click", function (e) {
   if (checkboxStatus.checked === false) {
-    checkboxSpan.style.color = 'red'
+    checkboxSpan.style.color = "red";
   } else {
-    checkboxSpan.style.color = '#fff'
+    checkboxSpan.style.color = "#fff";
   }
 
   for (let connectInput of connectInputs) {
@@ -117,3 +117,236 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// jsap
+
+const tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
+
+tl.fromTo(
+  ".hero__title",
+  {
+    x: -100,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 0.8,
+  }
+).fromTo(
+  ".hero__list li",
+  {
+    x: -100,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 1,
+    stagger: 0.4,
+  }
+);
+
+gsap.to(".hero__title", {
+  scrollTrigger: {
+    trigger: ".header",
+    start: "top top",
+    scrub: true,
+  },
+  xPercent: -100,
+});
+
+gsap.to(".hero__list li", {
+  scrollTrigger: {
+    trigger: ".header",
+    start: "100px top",
+    scrub: true,
+  },
+  xPercent: -200,
+  stagger: 0.1,
+});
+
+gsap.fromTo(
+  ".info__subtitle",
+  { opacity: 0, y: 250 },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".header",
+      start: "60% center",
+      end: "110% center",
+      scrub: true,
+    },
+  }
+);
+
+const titles = document.querySelectorAll(".default__title");
+
+titles.forEach((title) => {
+  gsap.fromTo(
+    title,
+    { opacity: 0, x: -100 },
+    {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: title.closest("section"),
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+      },
+    }
+  );
+});
+
+const servicesElems = document.querySelectorAll(".services__elem");
+
+servicesElems.forEach((servicesElem) => {
+  gsap.fromTo(
+    servicesElem,
+    {
+      x: -50,
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: servicesElem,
+        start: "top center",
+        end: "center center",
+        scrub: true,
+      },
+    }
+  );
+});
+
+const approachElems = document.querySelectorAll(".approach__elem");
+
+approachElems.forEach((approachElem) => {
+  gsap.fromTo(
+    approachElem,
+    {
+      scale: 0,
+      opacity: 0,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".services",
+        start: "bottom center",
+        end: "120% center",
+        scrub: true,
+      },
+    }
+  );
+});
+
+const caseElems = document.querySelectorAll(".case__elem");
+
+caseElems.forEach((caseElem) => {
+  gsap.fromTo(
+    caseElem,
+    {
+      y: 200,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: caseElem,
+        start: "-170% center",
+        end: "-170%",
+        scrub: true,
+      },
+    }
+  );
+});
+
+const swiperSlidesBlog = document.querySelectorAll(".swiper-slide_blog");
+
+swiperSlidesBlog.forEach((swiperSlideBlog) => {
+  gsap.fromTo(
+    swiperSlideBlog,
+    {
+      x: 300,
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".blog",
+        start: "top center",
+        end: "40% center",
+        scrub: true,
+      },
+    }
+  );
+});
+
+connectInputs.forEach((connectInput) => {
+  gsap.fromTo(
+    connectInput,
+    {
+      x: 100,
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+
+      scrollTrigger: {
+        trigger: connectInput,
+        start: "-180% center",
+        end: "40% center",
+      },
+    }
+  );
+});
+
+const connectBlocks = document.querySelectorAll(".connect_blocks");
+
+connectBlocks.forEach((connectBlock) => {
+  gsap.fromTo(
+    connectBlock,
+    {
+      x: 100,
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".connect__inputs",
+        start: "70% center",
+        end: "bottom center",
+      },
+    }
+  );
+});
+
+gsap.fromTo(
+  ".footer",
+  {
+    y: 100,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.footer',
+      start: 'top bottom',
+      end: '90% bottom',
+      scrub: true,
+    },
+  }
+);

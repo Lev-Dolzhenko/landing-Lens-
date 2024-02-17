@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lens</title>
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
@@ -31,18 +39,38 @@
               <nav class="header__nav">
                 <ul class="header__list">
                   <li class="header__item">
-                    <a class="header__link" href="#Info" onclick="scrollToElem('info')">О нас</a>
+                    <a
+                      class="header__link"
+                      href="#Info"
+                      onclick="scrollToElem('info')"
+                      >О нас</a
+                    >
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#Services" onclick="scrollToElem('services')">Услуги</a>
+                    <a
+                      class="header__link"
+                      href="#Services"
+                      onclick="scrollToElem('services')"
+                      >Услуги</a
+                    >
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#Services" onclick="scrollToElem('case')">Кейсы</a>
+                    <a
+                      class="header__link"
+                      href="#Services"
+                      onclick="scrollToElem('case')"
+                      >Кейсы</a
+                    >
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#Blog" onclick="scrollToElem('blog')">Блог</a>
+                    <a
+                      class="header__link"
+                      href="#Blog"
+                      onclick="scrollToElem('blog')"
+                      >Блог</a
+                    >
                   </li>
-                </ul> 
+                </ul>
               </nav>
               <button class="header__button button">Начать</button>
               <div id="burgerIcon" class="burder__button">
@@ -59,10 +87,20 @@
               </div>
               <nav class="header__nav_mobile">
                 <ul>
-                  <li><a href="#Info" onclick="scrollToElem('info')">О нас</a></li>
-                  <li><a href="#Services" onclick="scrollToElem('services')">Услуги</a></li>
-                  <li><a href="#Case" onclick="scrollToElem('case')">Кейсы</a></li>
-                  <li><a href="#Blog" onclick="scrollToElem('blog')">Блог</a></li>
+                  <li>
+                    <a href="#Info" onclick="scrollToElem('info')">О нас</a>
+                  </li>
+                  <li>
+                    <a href="#Services" onclick="scrollToElem('services')"
+                      >Услуги</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Case" onclick="scrollToElem('case')">Кейсы</a>
+                  </li>
+                  <li>
+                    <a href="#Blog" onclick="scrollToElem('blog')">Блог</a>
+                  </li>
                 </ul>
                 <button class="button button__header_mobile">Начать</button>
               </nav>
@@ -78,17 +116,17 @@
               </h1>
             </div>
             <ul class="hero__list">
-              <li class="hero__item">
+              <li class="hero__item hero__item_1">
                 <img src="/content/main/hero/check.svg" alt="check" /><span
                   >Фокусируемся на вашей цели</span
                 >
               </li>
-              <li class="hero__item">
+              <li class="hero__item hero__item_2">
                 <img src="/content/main/hero/check.svg" alt="check" /><span
                   >Не предлагаем шаблонных решений</span
                 >
               </li>
-              <li class="hero__item">
+              <li class="hero__item hero__item_3">
                 <img src="/content/main/hero/check.svg" alt="check" /><span
                   >Разделяем риски вместе с вами</span
                 >
@@ -220,7 +258,7 @@
             <h2 class="title2 title2_default">Наш подход&#41;</h2>
           </div>
           <div class="approach__grid">
-            <div class="approach__elem">
+            <article class="approach__elem">
               <div class="approach__elem_title">
                 <h3 class="title3 title3_approach"><span>1</span> Стратегия</h3>
                 <svg
@@ -253,8 +291,8 @@
                   чтобы затем сделать максимум возможного.
                 </p>
               </div>
-            </div>
-            <div class="approach__elem">
+            </article>
+            <article class="approach__elem">
               <div class="approach__elem_title">
                 <h3 class="title3 title3_approach"><span>2</span> План</h3>
                 <svg
@@ -288,8 +326,8 @@
                   вами.
                 </p>
               </div>
-            </div>
-            <div class="approach__elem">
+            </article>
+            <article class="approach__elem">
               <div class="approach__elem_title">
                 <h3 class="title3 title3_approach">
                   <span>3</span> Подготовка
@@ -325,8 +363,8 @@
                   calltracking, телефонию, сквозную аналитику.
                 </p>
               </div>
-            </div>
-            <div class="approach__elem">
+            </article>
+            <article class="approach__elem">
               <div class="approach__elem_title">
                 <h3 class="title3 title3_approach">
                   <span>4</span> Реализация
@@ -361,8 +399,8 @@
                   расхождения с планом, самостоятельно общаемся с техподдержкой.
                 </p>
               </div>
-            </div>
-            <div class="approach__elem">
+            </article>
+            <article class="approach__elem">
               <div class="approach__elem_title">
                 <h3 class="title3 title3_approach"><span>5</span> Анализ</h3>
                 <svg
@@ -395,8 +433,8 @@
                   рекламу, и делаем выводы о том, что работает лучше всего.
                 </p>
               </div>
-            </div>
-            <div class="approach__elem">
+            </article>
+            <article class="approach__elem">
               <div class="approach__elem_title">
                 <h3 class="title3 title3_approach">
                   <span>6</span> Оптимизация
@@ -432,7 +470,7 @@
                   и о том, что мы сделали, чтобы достичь результата.
                 </p>
               </div>
-            </div>
+            </article>
           </div>
           <div class="button__approach button__wrapper">
             <button class="button">Начать</button>
@@ -449,7 +487,7 @@
             /></a>
           </div>
           <div class="case__row">
-            <div class="case__elem">
+            <article class="case__elem">
               <div class="case__elem_type">
                 <div class="case__type_title">
                   <h3 class="title3 title3_case">Аbat Store</h3>
@@ -523,8 +561,8 @@
                   stroke-width="1.000000"
                 />
               </svg>
-            </div>
-            <div class="case__elem">
+            </article>
+            <article class="case__elem">
               <div class="case__elem_type">
                 <div class="case__type_title">
                   <h3 class="title3 title3_case">Аbat Store</h3>
@@ -575,8 +613,8 @@
                   stroke-width="1.000000"
                 />
               </svg>
-            </div>
-            <div class="case__elem">
+            </article>
+            <article class="case__elem">
               <div class="case__elem_type">
                 <div class="case__type_title">
                   <h3 class="title3 title3_case">Аbat Store</h3>
@@ -627,7 +665,7 @@
                   stroke-width="1.000000"
                 />
               </svg>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -805,12 +843,12 @@
                   type="text"
                 />
               </div>
-              <div class="radios__wrapper">
+              <div class="connect_blocks radios__wrapper">
                 <span>Как лучше связаться?</span>
                 <div class="connect__radios">
                   <label class="custom-checkbox">
                     <input
-                    checked
+                      checked
                       class="hidden-checkbox"
                       type="radio"
                       name="contactType"
@@ -856,9 +894,13 @@
                   </label>
                 </div>
               </div>
-              <div class="checkbox__wrapper_send">
+              <div class="connect_blocks checkbox__wrapper_send">
                 <label class="custom-checkbox_send checkbox_wrapper">
-                  <input id="checkbox_status" class="hidden-checkbox" type="checkbox" />
+                  <input
+                    id="checkbox_status"
+                    class="hidden-checkbox"
+                    type="checkbox"
+                  />
                   <div class="checkbox_send">
                     <img
                       class="checkmark_send"
@@ -872,10 +914,12 @@
                   </span>
                 </label>
               </div>
-              <div class="connect__button">
-                <button id="openPopup" class="button button_connect">Отправить</button>
+              <div class="connect_blocks connect__button">
+                <button id="openPopup" class="button button_connect">
+                  Отправить
+                </button>
               </div>
-              <div class="connect__telegram">
+              <div class="connect_blocks connect__telegram">
                 <a href="!#">
                   <img
                     src="/content/main/connect/telegramIcon.svg"
